@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from '../styles/Field-form.module.css'
 
 const Filter = ({filter, onType}) => {
@@ -16,6 +17,10 @@ const Filter = ({filter, onType}) => {
         </> 
       )
 }
-     
+
+Filter.propTypes ={
+  filter: PropTypes.string.isRequired, 
+  onType: PropTypes.func.isRequired,
+}
 
 export default Filter;
